@@ -11,7 +11,7 @@ public class Randoms implements Iterable<Integer> {
     protected Random random;
 
     public Randoms(int min, int max) {
-       // randomIterator = new Random().ints(min, (max + 1)).iterator();
+        // randomIterator = new Random().ints(min, (max + 1)).iterator();
         this.min = min;
         this.max = max;
         this.random = new Random();
@@ -21,6 +21,7 @@ public class Randoms implements Iterable<Integer> {
     public Iterator<Integer> iterator() {
         return new randomIterator();
     }
+
     public class randomIterator implements Iterator<Integer> {
         @Override
         public boolean hasNext() {
@@ -33,9 +34,6 @@ public class Randoms implements Iterable<Integer> {
         }
 
     }
-
-
-
 
 
     //...
